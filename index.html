@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en-NZ" ng-app="webApp" class="seedAngular">
+
+<head>
+    <title>SeedAngular</title>
+    <link rel="icon" type="image/x-icon" href="resources/img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"/>
+    <!-- Angular Material style sheet -->
+    <link rel="stylesheet" href="resources/scripts/angular-material.min.css">
+    <link rel="stylesheet" href="resources/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="source/styles.css">
+</head>
+
+<body>
+    <!-- External Sources -->
+    <script src="resources/scripts/angular.min.js"></script>
+    <script src="resources/scripts/angular-material.min.js"></script>
+    <script src="resources/scripts/angular-animate.min.js"></script>
+    <script src="resources/scripts/angular-aria.min.js"></script>
+    <script src="resources/scripts/angular-messages.min.js"></script>
+    <script src="resources/scripts/angular-ui-router.min.js"></script>
+    <script src="resources/scripts/lodash.js"></script>
+
+    <!-- Config Files -->
+    <script src="source/app.js"></script>
+    <script src="source/config/state.config.js"></script>
+    <script src="source/config/theme.config.js"></script>
+
+    <!-- Local Javascript Files -->
+    <script src="source/components/home.component.js"></script>
+    <script src="source/components/page-header.component.js"></script>
+
+    <!-- Base page layout -->
+    <page-header></page-header>
+    <div class="content">
+      <ui-view></ui-view>
+    </div>
+
+
+    <!-- HTML Files -->
+    <script type="text/ng-template" id="page-header.template">
+      <md-toolbar class="md-primary pageHeader">
+        <div class="md-toolbar-tools">
+          <md-button layout="row" ui-sref="home">
+            <img src="resources/img/logo-born.png" class="button-logo">
+            <span class="button-text">Seed Angular</span>
+          </md-button>
+        </div>
+      </md-toolbar>
+    </script>
+
+
+    <script type="text/ng-template" id="home.template">
+      <div class="md-title">Hello World</div>
+    </script>
+
+</body>
+
+</html>

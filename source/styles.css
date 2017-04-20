@@ -1,0 +1,12 @@
+.seedAngular .content {
+  padding: 36px;
+}
+.pageHeader .button-logo {
+  height: 30px;
+}
+.pageHeader .button-text {
+  margin-left: 12px;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: none;
+}
